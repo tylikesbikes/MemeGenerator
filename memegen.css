@@ -1,0 +1,136 @@
+body {
+    background-color:antiquewhite;
+}
+
+#formContainer {
+    position:relative;
+    width:75%;
+    margin:0 auto 10px;
+    padding-top:0px;
+    padding-left:0px;
+    border:1px solid black;
+    border-radius:5px;
+}
+
+.formHeading {
+    position:relative;
+    width:100%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:0 auto;
+    background-color:lightgray;
+    border-radius:5px;
+}
+
+#createForm {
+    position:relative;
+    margin-left:10px;
+}
+
+.formHeading h1 {
+    padding:0px;
+    margin:0px;
+}
+
+button {
+    border-radius:5px;
+    box-shadow:5px;
+    background-color:lightgray;
+}
+
+#newMeme {
+    position:relative;
+    margin:0 auto;
+}
+#newMeme img {
+    position:relative;
+    max-width:400px;
+    max-height:400px;
+}
+
+#newMemeTextOverlay {
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+}
+
+#newMemeTextOverlay p {
+    position:absolute;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    display:block;
+    margin:0 auto;
+    text-transform:uppercase;
+}
+
+#topTextContent {
+    position:relative;
+    overflow-wrap: break-word;
+    text-align:center;
+    text-shadow:-1px 1px 0 black,
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        1px 1px 0 black;
+    max-width:100%;
+    top:0px;
+}
+
+#bottomTextContent {
+    position:relative;
+    overflow-wrap:break-word;
+    text-align:center;
+    text-shadow:-1px 1px 0 black,
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        1px 1px 0 black;
+    max-width:100%;
+    bottom:0px;
+}
+
+div.x {
+    background-color:hsla(0,50%,50%,0);
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+
+div.x:hover {
+    background-color:hsla(0,20%,30%,.5);
+    font-size:3em;
+}
+
+div.x p{
+    visibility:hidden;
+    color:hsla(0,100%,50%,1);
+}
+
+div.x:hover p{
+    visibility:visible;
+    position:relative;
+    top:50%;
+    left:50%;
+}
+
+
+
+#createdMemes {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    width:900px;
+    margin:0 auto;
+}
+
+#createdMemes #newMeme {
+    width:400px;
+    max-height:400px;
+    margin:20px;
+}
+
+#createdMemes #newMeme img{
+    max-width:100%;
+    max-height:100%;
+}

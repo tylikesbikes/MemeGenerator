@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memegen.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+
+    <div id="formContainer">
+        <div class="formHeading">
+            <h1>Create a meme</h1>
+        </div>
+        <form action="submit" id="createForm">
+            <p><input type="text" name="imgURL" id="imgURL" placeholder="Enter Image URL Here" value="https://www.plagiarismtoday.com/wp-content/uploads/2020/01/Success-Kid-2.jpg">
+            <button action="submit" id="updateImgBtn">Display Image for Editing</button></p>
+
+            <p><label for="topTextInput">Enter text for the top of your meme:</label>
+            <input type="text" name="topText" id="topTextInput"></p>
+
+            <p><label for="bottomTextInput">Enter text for the bottom of your meme:</label>
+            <input type="text" name="bottomText" id="bottomTextInput"></p>
+
+            <p><button action="submit" id="updateText">Update Text</button></p>
+            <p><button action="submit" id="finalizeBtn">Add to the party</button></p>
+        </form>
+    </div>
+
+    <div id="newMeme">
+        <div id="newMemeTextOverlay">
+                <p id="topTextContent"></p>
+                <p id="bottomTextContent"></p>
+        </div>
+    </div>
+    
+    <div id="createdMemes">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
